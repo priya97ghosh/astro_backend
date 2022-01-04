@@ -1,0 +1,3029 @@
+{
+	"info": {
+		"_postman_id": "ba6a8bc7-2b34-4f9d-b099-fb6a812658ef",
+		"name": "AstroCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Horoscope",
+					"item": [
+						{
+							"name": "Daily",
+							"item": [
+								{
+									"name": "create daily horoscope",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\t\"signName\": \"Taurus\",\r\n\t\"date\": \"01\",\r\n\t\"month\": \"November\",\r\n\t\"year\": \"2021\",\r\n\t\"content\": \"You may want to explore the limits of your professional potential right now, as the idea of a project that's beyond the scope of your regular duties could seem like it will pay off handsomely. Don't hesitate to try your hand at an unfamiliar task or take on a new client. If you're looking for work, you might want to apply for jobs in industries other than those you've previously occupied. You could be a great fit for an intriguing emerging field.\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:3000/admin/daily-horoscope-creation",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"admin",
+												"daily-horoscope-creation"
+											]
+										},
+										"description": "This API endpoint is for creating new daily horoscope."
+									},
+									"response": [
+										{
+											"name": "create daily horoscope",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n\t\"signName\": \"Taurus\",\r\n\t\"date\": \"01\",\r\n\t\"month\": \"November\",\r\n\t\"year\": \"2021\",\r\n\t\"content\": \"You may want to explore the limits of your professional potential right now, as the idea of a project that's beyond the scope of your regular duties could seem like it will pay off handsomely. Don't hesitate to try your hand at an unfamiliar task or take on a new client. If you're looking for work, you might want to apply for jobs in industries other than those you've previously occupied. You could be a great fit for an intriguing emerging field.\"\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "http://localhost:3000/admin/daily-horoscope-creation",
+													"protocol": "http",
+													"host": [
+														"localhost"
+													],
+													"port": "3000",
+													"path": [
+														"admin",
+														"daily-horoscope-creation"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "X-Powered-By",
+													"value": "Express"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "654"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"28e-NMR3Tlt+o8fChUpyurvZVm2Qua4\""
+												},
+												{
+													"key": "Date",
+													"value": "Tue, 02 Nov 2021 05:56:05 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"success\": true,\n    \"message\": \"Daily Horoscope Creation was Success\",\n    \"Daily_Horoscope\": {\n        \"signName\": \"Taurus\",\n        \"date\": \"01\",\n        \"month\": \"November\",\n        \"year\": \"2021\",\n        \"content\": \"You may want to explore the limits of your professional potential right now, as the idea of a project that's beyond the scope of your regular duties could seem like it will pay off handsomely. Don't hesitate to try your hand at an unfamiliar task or take on a new client. If you're looking for work, you might want to apply for jobs in industries other than those you've previously occupied. You could be a great fit for an intriguing emerging field.\",\n        \"_id\": \"6180d2f5b31a6eed38b5469d\",\n        \"__v\": 0\n    }\n}"
+										}
+									]
+								},
+								{
+									"name": "get all daily horoscope",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:3000/admin/get-all-daily-horoscope/",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"admin",
+												"get-all-daily-horoscope",
+												""
+											]
+										},
+										"description": "This API endpoint is for fetching all the daily horoscope details."
+									},
+									"response": [
+										{
+											"name": "get all daily horoscope",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "http://localhost:3000/admin/get-all-daily-horoscope/",
+													"protocol": "http",
+													"host": [
+														"localhost"
+													],
+													"port": "3000",
+													"path": [
+														"admin",
+														"get-all-daily-horoscope",
+														""
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "X-Powered-By",
+													"value": "Express"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "586"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"24a-EOs/fG234qI8xiPhH8aaN5VDV/8\""
+												},
+												{
+													"key": "Date",
+													"value": "Tue, 02 Nov 2021 06:32:14 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"body": "[\n    {\n        \"_id\": \"6180d21f837d24f51a82ce30\",\n        \"signName\": \"Libra\",\n        \"date\": \"01\",\n        \"month\": \"November\",\n        \"year\": \"2021\",\n        \"content\": \"Your phone may not stop ringing today. Friends and family may have good news and interesting information to share, so you'll want to spend a lot of time talking with them. You might learn about some newly released books that interest you. A number of errands might also need to be done, but you'll have fun doing them.\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6180d292b31a6eed38b54699\",\n        \"signName\": \"Libra\",\n        \"date\": \"03\",\n        \"month\": \"November\",\n        \"year\": \"2021\",\n        \"content\": \"Aj kuch nai hai kal ana....\",\n        \"__v\": 0\n    }\n]"
+										}
+									]
+								},
+								{
+									"name": "update daily horoscope",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\t\"signName\": \"Libra\",\r\n\t\"date\": \"03\",\r\n\t\"month\": \"November\",\r\n\t\"year\": \"2021\",\r\n\t\"content\": \"Aj kuch nai hai kal ana....\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:3000/admin/update-daily-horoscope/6180d292b31a6eed38b54699",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"admin",
+												"update-daily-horoscope",
+												"6180d292b31a6eed38b54699"
+											]
+										},
+										"description": "This API endpoint is for updating the existing daily horoscope."
+									},
+									"response": [
+										{
+											"name": "update daily horoscope",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n\t\"signName\": \"Libra\",\r\n\t\"date\": \"03\",\r\n\t\"month\": \"November\",\r\n\t\"year\": \"2021\",\r\n\t\"content\": \"Aj kuch nai hai kal ana....\"\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "http://localhost:3000/admin/update-daily-horoscope/6180d292b31a6eed38b54699",
+													"protocol": "http",
+													"host": [
+														"localhost"
+													],
+													"port": "3000",
+													"path": [
+														"admin",
+														"update-daily-horoscope",
+														"6180d292b31a6eed38b54699"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "X-Powered-By",
+													"value": "Express"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "234"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"ea-yJoPY583QV7EWisLngGW5377DYs\""
+												},
+												{
+													"key": "Date",
+													"value": "Tue, 02 Nov 2021 06:25:34 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"error\": false,\n    \"message\": \"This Daily Horoscope updated successfully!\",\n    \"DailyHoroscope\": {\n        \"_id\": \"6180d292b31a6eed38b54699\",\n        \"signName\": \"Libra\",\n        \"date\": \"03\",\n        \"month\": \"November\",\n        \"year\": \"2021\",\n        \"content\": \"Aj kuch nai hai kal ana....\",\n        \"__v\": 0\n    }\n}"
+										}
+									]
+								},
+								{
+									"name": "delete daily horoscope",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:3000/admin/delete-daily-horoscope/6180d2f5b31a6eed38b5469d",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"admin",
+												"delete-daily-horoscope",
+												"6180d2f5b31a6eed38b5469d"
+											]
+										},
+										"description": "This API endpoint is for deletion of daily horoscope."
+									},
+									"response": [
+										{
+											"name": "delete daily horoscope",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "http://localhost:3000/admin/delete-daily-horoscope/6180d2f5b31a6eed38b5469d",
+													"protocol": "http",
+													"host": [
+														"localhost"
+													],
+													"port": "3000",
+													"path": [
+														"admin",
+														"delete-daily-horoscope",
+														"6180d2f5b31a6eed38b5469d"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "X-Powered-By",
+													"value": "Express"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "100"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"64-mOqqBHxMGa8dSjkLu8rkqF+K1Rw\""
+												},
+												{
+													"key": "Date",
+													"value": "Tue, 02 Nov 2021 06:08:39 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"error\": false,\n    \"message\": \"This Daily Horoscope Deleted Successfully!\",\n    \"Response\": {\n        \"deletedCount\": 1\n    }\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "weekly",
+							"item": [
+								{
+									"name": "create weekly horoscope",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\t\"signName\": \"Taurus\",\r\n\t\"week\": 2,\r\n\t\"fromDate\": \"08\",\r\n\t\"toDate\": \"14\",\r\n\t\"month\": \"November\",\r\n\t\"year\": \"2021\",\r\n\t\"content\": \"You may want to explore the limits of your professional potential right now, as the idea of a project that's beyond the scope of your regular duties could seem like it will pay off handsomely. Don't hesitate to try your hand at an unfamiliar task or take on a new client. If you're looking for work, you might want to apply for jobs in industries other than those you've previously occupied. You could be a great fit for an intriguing emerging field.\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:3000/admin/weekly-horoscope-creation",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"admin",
+												"weekly-horoscope-creation"
+											]
+										},
+										"description": "This API endpoint is for creating weekly Horoscope."
+									},
+									"response": [
+										{
+											"name": "create weekly horoscope",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n\t\"signName\": \"Taurus\",\r\n\t\"week\": 2,\r\n\t\"fromDate\": \"08\",\r\n\t\"toDate\": \"14\",\r\n\t\"month\": \"November\",\r\n\t\"year\": \"2021\",\r\n\t\"content\": \"You may want to explore the limits of your professional potential right now, as the idea of a project that's beyond the scope of your regular duties could seem like it will pay off handsomely. Don't hesitate to try your hand at an unfamiliar task or take on a new client. If you're looking for work, you might want to apply for jobs in industries other than those you've previously occupied. You could be a great fit for an intriguing emerging field.\"\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "http://localhost:3000/admin/weekly-horoscope-creation",
+													"protocol": "http",
+													"host": [
+														"localhost"
+													],
+													"port": "3000",
+													"path": [
+														"admin",
+														"weekly-horoscope-creation"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "X-Powered-By",
+													"value": "Express"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "683"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"2ab-+jFjiRsF+RYWrwabSy0Jxom/OWA\""
+												},
+												{
+													"key": "Date",
+													"value": "Tue, 02 Nov 2021 07:48:26 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"success\": true,\n    \"message\": \"Weekly Horoscope Creation was Success\",\n    \"Weekly_Horoscope\": {\n        \"signName\": \"Taurus\",\n        \"week\": 2,\n        \"fromDate\": \"08\",\n        \"toDate\": \"14\",\n        \"month\": \"November\",\n        \"year\": \"2021\",\n        \"content\": \"You may want to explore the limits of your professional potential right now, as the idea of a project that's beyond the scope of your regular duties could seem like it will pay off handsomely. Don't hesitate to try your hand at an unfamiliar task or take on a new client. If you're looking for work, you might want to apply for jobs in industries other than those you've previously occupied. You could be a great fit for an intriguing emerging field.\",\n        \"_id\": \"6180ed4a06643e3b5dacbc3f\",\n        \"__v\": 0\n    }\n}"
+										}
+									]
+								},
+								{
+									"name": "get all weekly horoscope",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:3000/admin/get-all-weekly-horoscope",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"admin",
+												"get-all-weekly-horoscope"
+											]
+										},
+										"description": "This API endpoint is for fetching all the weekly horoscopes created"
+									},
+									"response": [
+										{
+											"name": "get all weekly horoscope",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "http://localhost:3000/admin/get-all-weekly-horoscope",
+													"protocol": "http",
+													"host": [
+														"localhost"
+													],
+													"port": "3000",
+													"path": [
+														"admin",
+														"get-all-weekly-horoscope"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "X-Powered-By",
+													"value": "Express"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "1197"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"4ad-1DsnL/OVR5ylnIO2BHmlE+AmYRI\""
+												},
+												{
+													"key": "Date",
+													"value": "Tue, 02 Nov 2021 08:21:31 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"body": "[\n    {\n        \"_id\": \"6180ed07b8ee43daffa79954\",\n        \"signName\": \"Taurus\",\n        \"week\": 1,\n        \"fromDate\": \"01\",\n        \"toDate\": \"07\",\n        \"month\": \"November\",\n        \"year\": \"2021\",\n        \"content\": \"You may want to explore the limits of your professional potential right now, as the idea of a project that's beyond the scope of your regular duties could seem like it will pay off handsomely. Don't hesitate to try your hand at an unfamiliar task or take on a new client. If you're looking for work, you might want to apply for jobs in industries other than those you've previously occupied. You could be a great fit for an intriguing emerging field.\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6180ed4a06643e3b5dacbc3f\",\n        \"signName\": \"Taurus\",\n        \"week\": 2,\n        \"fromDate\": \"08\",\n        \"toDate\": \"14\",\n        \"month\": \"November\",\n        \"year\": \"2021\",\n        \"content\": \"You may want to explore the limits of your professional potential right now, as the idea of a project that's beyond the scope of your regular duties could seem like it will pay off handsomely. Don't hesitate to try your hand at an unfamiliar task or take on a new client. If you're looking for work, you might want to apply for jobs in industries other than those you've previously occupied. You could be a great fit for an intriguing emerging field.\",\n        \"__v\": 0\n    }\n]"
+										}
+									]
+								},
+								{
+									"name": "Update weekly horoscope",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\t\"signName\": \"Libra\",\r\n\t\"week\": 2,\r\n\t\"fromDate\": \"08\",\r\n\t\"toDate\": \"14\",\r\n\t\"month\": \"November\",\r\n\t\"year\": \"2021\",\r\n\t\"content\": \"You may want to explore the limits of your professional potential right now, as the idea of a project that's beyond the scope of your regular duties could seem like it will pay off handsomely. Don't hesitate to try your hand at an unfamiliar task or take on a new client. If you're looking for work, you might want to apply for jobs in industries other than those you've previously occupied. You could be a great fit for an intriguing emerging field.\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:3000/admin/update-weekly-horoscope/6180ed07b8ee43daffa79954",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"admin",
+												"update-weekly-horoscope",
+												"6180ed07b8ee43daffa79954"
+											]
+										},
+										"description": "This API endpoint is for updating the Weekly Horoscopes."
+									},
+									"response": [
+										{
+											"name": "Update weekly horoscope",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n\t\"signName\": \"Libra\",\r\n\t\"week\": 2,\r\n\t\"fromDate\": \"08\",\r\n\t\"toDate\": \"14\",\r\n\t\"month\": \"November\",\r\n\t\"year\": \"2021\",\r\n\t\"content\": \"You may want to explore the limits of your professional potential right now, as the idea of a project that's beyond the scope of your regular duties could seem like it will pay off handsomely. Don't hesitate to try your hand at an unfamiliar task or take on a new client. If you're looking for work, you might want to apply for jobs in industries other than those you've previously occupied. You could be a great fit for an intriguing emerging field.\"\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "http://localhost:3000/admin/update-weekly-horoscope/6180ed07b8ee43daffa79954",
+													"protocol": "http",
+													"host": [
+														"localhost"
+													],
+													"port": "3000",
+													"path": [
+														"admin",
+														"update-weekly-horoscope",
+														"6180ed07b8ee43daffa79954"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "X-Powered-By",
+													"value": "Express"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "685"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"2ad-fEgenmhSKzjm6rPQ82uREECi9oE\""
+												},
+												{
+													"key": "Date",
+													"value": "Tue, 02 Nov 2021 08:27:46 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"error\": false,\n    \"message\": \"This Weekly Horoscope updated successfully!\",\n    \"DailyHoroscope\": {\n        \"_id\": \"6180ed07b8ee43daffa79954\",\n        \"signName\": \"Libra\",\n        \"week\": 2,\n        \"fromDate\": \"08\",\n        \"toDate\": \"14\",\n        \"month\": \"November\",\n        \"year\": \"2021\",\n        \"content\": \"You may want to explore the limits of your professional potential right now, as the idea of a project that's beyond the scope of your regular duties could seem like it will pay off handsomely. Don't hesitate to try your hand at an unfamiliar task or take on a new client. If you're looking for work, you might want to apply for jobs in industries other than those you've previously occupied. You could be a great fit for an intriguing emerging field.\",\n        \"__v\": 0\n    }\n}"
+										}
+									]
+								},
+								{
+									"name": "delete weekly horoscope",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:3000/admin/delete-weekly-horoscope/6180ed4a06643e3b5dacbc3f",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"admin",
+												"delete-weekly-horoscope",
+												"6180ed4a06643e3b5dacbc3f"
+											]
+										},
+										"description": "This API endpoint is for delete a specific weekly horoscope."
+									},
+									"response": [
+										{
+											"name": "delete weekly horoscope",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "http://localhost:3000/admin/delete-weekly-horoscope/6180ed4a06643e3b5dacbc3f",
+													"protocol": "http",
+													"host": [
+														"localhost"
+													],
+													"port": "3000",
+													"path": [
+														"admin",
+														"delete-weekly-horoscope",
+														"6180ed4a06643e3b5dacbc3f"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "X-Powered-By",
+													"value": "Express"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "101"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"65-12+6xiHA1Uxv94dqYeyI1NtmO38\""
+												},
+												{
+													"key": "Date",
+													"value": "Tue, 02 Nov 2021 08:23:49 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"error\": false,\n    \"message\": \"This Weekly Horoscope Deleted Successfully!\",\n    \"Response\": {\n        \"deletedCount\": 1\n    }\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "Monthly",
+							"item": [
+								{
+									"name": "create monthly horoscope Copy",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\t\"signName\": \"Taurus\",\r\n\t\r\n\t\"month\": \"November\",\r\n\t\"year\": \"2021\",\r\n\t\"content\": \"You may want to explore the limits of your professional potential right now, as the idea of a project that's beyond the scope of your regular duties could seem like it will pay off handsomely. Don't hesitate to try your hand at an unfamiliar task or take on a new client. If you're looking for work, you might want to apply for jobs in industries other than those you've previously occupied. You could be a great fit for an intriguing emerging field.\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:3000/admin/monthly-horoscope-creation",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"admin",
+												"monthly-horoscope-creation"
+											]
+										},
+										"description": "This API endpoint is for monthly create horoscope"
+									},
+									"response": [
+										{
+											"name": "create monthly horoscope",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n\t\"signName\": \"Taurus\",\r\n\t\r\n\t\"month\": \"November\",\r\n\t\"year\": \"2021\",\r\n\t\"content\": \"You may want to explore the limits of your professional potential right now, as the idea of a project that's beyond the scope of your regular duties could seem like it will pay off handsomely. Don't hesitate to try your hand at an unfamiliar task or take on a new client. If you're looking for work, you might want to apply for jobs in industries other than those you've previously occupied. You could be a great fit for an intriguing emerging field.\"\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "http://localhost:3000/admin/monthly-horoscope-creation",
+													"protocol": "http",
+													"host": [
+														"localhost"
+													],
+													"port": "3000",
+													"path": [
+														"admin",
+														"monthly-horoscope-creation"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "X-Powered-By",
+													"value": "Express"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "68"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"44-9FjQ6TCVgg9yPeaA2DzQdpW9D70\""
+												},
+												{
+													"key": "Date",
+													"value": "Tue, 02 Nov 2021 09:34:48 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"error\": true,\n    \"message\": \"These Details are already in use!!!!!!!!!\"\n}"
+										}
+									]
+								},
+								{
+									"name": "get all monthly horoscope Copy",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:3000/admin/get-all-monthly-horoscope",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"admin",
+												"get-all-monthly-horoscope"
+											]
+										},
+										"description": "This API endpoint is for get all monthly horoscope"
+									},
+									"response": [
+										{
+											"name": "get all monthly horoscope",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "http://localhost:3000/admin/get-all-monthly-horoscope",
+													"protocol": "http",
+													"host": [
+														"localhost"
+													],
+													"port": "3000",
+													"path": [
+														"admin",
+														"get-all-monthly-horoscope"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "X-Powered-By",
+													"value": "Express"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "560"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"230-YS+JCT9pnGj6Iio5dszyIa83IHU\""
+												},
+												{
+													"key": "Date",
+													"value": "Tue, 02 Nov 2021 09:38:41 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"body": "[\n    {\n        \"_id\": \"618105dffc16511d47fdee33\",\n        \"signName\": \"Taurus\",\n        \"month\": \"November\",\n        \"year\": \"2021\",\n        \"content\": \"You may want to explore the limits of your professional potential right now, as the idea of a project that's beyond the scope of your regular duties could seem like it will pay off handsomely. Don't hesitate to try your hand at an unfamiliar task or take on a new client. If you're looking for work, you might want to apply for jobs in industries other than those you've previously occupied. You could be a great fit for an intriguing emerging field.\",\n        \"__v\": 0\n    }\n]"
+										}
+									]
+								},
+								{
+									"name": "update monthly horoscope Copy",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:3000/admin/update-monthly-horoscope",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"admin",
+												"update-monthly-horoscope"
+											]
+										},
+										"description": "This API endpoint is for update monthly horoscope"
+									},
+									"response": []
+								},
+								{
+									"name": "delete monthly horoscope Copy",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:3000/admin/delete-monthly-horoscope/618105dffc16511d47fdee33",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"admin",
+												"delete-monthly-horoscope",
+												"618105dffc16511d47fdee33"
+											]
+										},
+										"description": "This API endpoint is for delete monthly horoscope"
+									},
+									"response": [
+										{
+											"name": "delete monthly horoscope",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "http://localhost:3000/admin/delete-monthly-horoscope/618105dffc16511d47fdee33",
+													"protocol": "http",
+													"host": [
+														"localhost"
+													],
+													"port": "3000",
+													"path": [
+														"admin",
+														"delete-monthly-horoscope",
+														"618105dffc16511d47fdee33"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "X-Powered-By",
+													"value": "Express"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "102"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"66-altlWQ1PnWD96K3Zt4D4rR+oMCM\""
+												},
+												{
+													"key": "Date",
+													"value": "Tue, 02 Nov 2021 09:42:06 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"error\": false,\n    \"message\": \"This Monthly Horoscope Deleted Successfully!\",\n    \"Response\": {\n        \"deletedCount\": 1\n    }\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "Yearly",
+							"item": [
+								{
+									"name": "create yearly horoscope",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"signName\": \"Taurus\",\r\n    \"year\": \"2021\",\r\n    \"content\": \"You may want to explore the limits of your professional potential right now, as the idea of a project that's beyond the scope of your regular duties could seem like it will pay off handsomely. Don't hesitate to try your hand at an unfamiliar task or take on a new client. If you're looking for work, you might want to apply for jobs in industries other than those you've previously occupied. You could be a great fit for an intriguing emerging field.\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:3000/admin/yearly-horoscope-creation",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"admin",
+												"yearly-horoscope-creation"
+											]
+										},
+										"description": "This API endpoint is for yearly create horoscope"
+									},
+									"response": [
+										{
+											"name": "create yearly horoscope",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n    \"signName\": \"Taurus\",\r\n    \"year\": \"2021\",\r\n    \"content\": \"You may want to explore the limits of your professional potential right now, as the idea of a project that's beyond the scope of your regular duties could seem like it will pay off handsomely. Don't hesitate to try your hand at an unfamiliar task or take on a new client. If you're looking for work, you might want to apply for jobs in industries other than those you've previously occupied. You could be a great fit for an intriguing emerging field.\"\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "http://localhost:3000/admin/yearly-horoscope-creation",
+													"protocol": "http",
+													"host": [
+														"localhost"
+													],
+													"port": "3000",
+													"path": [
+														"admin",
+														"yearly-horoscope-creation"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "X-Powered-By",
+													"value": "Express"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "625"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"271-hZk7uQAHgHD3HsAlj1Cl9uUpYTo\""
+												},
+												{
+													"key": "Date",
+													"value": "Tue, 02 Nov 2021 09:46:09 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"success\": true,\n    \"message\": \"Yearly Horoscope Creation was Success\",\n    \"Yearly_Horoscope\": {\n        \"signName\": \"Taurus\",\n        \"year\": \"2021\",\n        \"content\": \"You may want to explore the limits of your professional potential right now, as the idea of a project that's beyond the scope of your regular duties could seem like it will pay off handsomely. Don't hesitate to try your hand at an unfamiliar task or take on a new client. If you're looking for work, you might want to apply for jobs in industries other than those you've previously occupied. You could be a great fit for an intriguing emerging field.\",\n        \"_id\": \"618108e1fc16511d47fdee3d\",\n        \"__v\": 0\n    }\n}"
+										}
+									]
+								},
+								{
+									"name": "get all yearly horoscope",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:3000/admin/get-all-yearly-horoscope",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"admin",
+												"get-all-yearly-horoscope"
+											]
+										},
+										"description": "This API endpoint is for get all yearly horoscope"
+									},
+									"response": [
+										{
+											"name": "get all yearly horoscope",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "http://localhost:3000/admin/get-all-yearly-horoscope",
+													"protocol": "http",
+													"host": [
+														"localhost"
+													],
+													"port": "3000",
+													"path": [
+														"admin",
+														"get-all-yearly-horoscope"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "X-Powered-By",
+													"value": "Express"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "541"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"21d-Phqy2t1wk6267VuMzdMd+2NBfpY\""
+												},
+												{
+													"key": "Date",
+													"value": "Tue, 02 Nov 2021 09:48:50 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"body": "[\n    {\n        \"_id\": \"618108e1fc16511d47fdee3d\",\n        \"signName\": \"Taurus\",\n        \"year\": \"2021\",\n        \"content\": \"You may want to explore the limits of your professional potential right now, as the idea of a project that's beyond the scope of your regular duties could seem like it will pay off handsomely. Don't hesitate to try your hand at an unfamiliar task or take on a new client. If you're looking for work, you might want to apply for jobs in industries other than those you've previously occupied. You could be a great fit for an intriguing emerging field.\",\n        \"__v\": 0\n    }\n]"
+										}
+									]
+								},
+								{
+									"name": "update yearly horoscope",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"signName\": \"Gemini\",\r\n    \"year\": \"2021\",\r\n    \"content\": \"You may want to explore the limits of your professional potential right now, as the idea of a project that's beyond the scope of your regular duties could seem like it will pay off handsomely. Don't hesitate to try your hand at an unfamiliar task or take on a new client. If you're looking for work, you might want to apply for jobs in industries other than those you've previously occupied. You could be a great fit for an intriguing emerging field.\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:3000/admin/update-yearly-horoscope/618108e1fc16511d47fdee3d",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"admin",
+												"update-yearly-horoscope",
+												"618108e1fc16511d47fdee3d"
+											]
+										},
+										"description": "This API endpoint is for update yearly horoscope"
+									},
+									"response": [
+										{
+											"name": "update yearly horoscope",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n    \"signName\": \"Gemini\",\r\n    \"year\": \"2021\",\r\n    \"content\": \"You may want to explore the limits of your professional potential right now, as the idea of a project that's beyond the scope of your regular duties could seem like it will pay off handsomely. Don't hesitate to try your hand at an unfamiliar task or take on a new client. If you're looking for work, you might want to apply for jobs in industries other than those you've previously occupied. You could be a great fit for an intriguing emerging field.\"\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "http://localhost:3000/admin/update-yearly-horoscope/618108e1fc16511d47fdee3d",
+													"protocol": "http",
+													"host": [
+														"localhost"
+													],
+													"port": "3000",
+													"path": [
+														"admin",
+														"update-yearly-horoscope",
+														"618108e1fc16511d47fdee3d"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "X-Powered-By",
+													"value": "Express"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "629"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"275-YLklMMR9zR0mtUP95Q9DeWLAyk0\""
+												},
+												{
+													"key": "Date",
+													"value": "Tue, 02 Nov 2021 09:53:53 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"error\": false,\n    \"message\": \"This Yearly Horoscope updated successfully!\",\n    \"YearlyHoroscope\": {\n        \"_id\": \"618108e1fc16511d47fdee3d\",\n        \"signName\": \"Gemini\",\n        \"year\": \"2021\",\n        \"content\": \"You may want to explore the limits of your professional potential right now, as the idea of a project that's beyond the scope of your regular duties could seem like it will pay off handsomely. Don't hesitate to try your hand at an unfamiliar task or take on a new client. If you're looking for work, you might want to apply for jobs in industries other than those you've previously occupied. You could be a great fit for an intriguing emerging field.\",\n        \"__v\": 0\n    }\n}"
+										}
+									]
+								},
+								{
+									"name": "delete yearly horoscope",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:3000/admin/delete-yearly-horoscope/618108e1fc16511d47fdee3d",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"admin",
+												"delete-yearly-horoscope",
+												"618108e1fc16511d47fdee3d"
+											]
+										},
+										"description": "This API endpoint is for delete yearly horoscope"
+									},
+									"response": [
+										{
+											"name": "delete yearly horoscope",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "http://localhost:3000/admin/delete-yearly-horoscope/618108e1fc16511d47fdee3d",
+													"protocol": "http",
+													"host": [
+														"localhost"
+													],
+													"port": "3000",
+													"path": [
+														"admin",
+														"delete-yearly-horoscope",
+														"618108e1fc16511d47fdee3d"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "X-Powered-By",
+													"value": "Express"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "101"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"65-7QgSwIeSmlWd88XjSbmYJtmBYYw\""
+												},
+												{
+													"key": "Date",
+													"value": "Tue, 02 Nov 2021 09:55:39 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"error\": false,\n    \"message\": \"This Yearly Horoscope Deleted Successfully!\",\n    \"Response\": {\n        \"deletedCount\": 1\n    }\n}"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Admin_Astro_Creation",
+					"item": [
+						{
+							"name": "Astro Creation",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"firstName\": \"Priya\",\r\n    \"lastName\": \"Ghosh\",\r\n    \"email\": \"fipamoj396@d3bb.com\",\r\n    \"contactNumber\": \"8777068650\",\r\n    \"gender\": \"Female\",\r\n    \"active\": false,\r\n    \"password\": \"asdf1234\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/admin/astro-creation",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"admin",
+										"astro-creation"
+									]
+								},
+								"description": "This API end point is for astro creation for admin user."
+							},
+							"response": [
+								{
+									"name": "Astro Creation",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"firstName\": \"Priya\",\r\n    \"lastName\": \"Ghosh\",\r\n    \"email\": \"fipamoj396@d3bb.com\",\r\n    \"contactNumber\": \"8777068650\",\r\n    \"gender\": \"Female\",\r\n    \"active\": false,\r\n    \"password\": \"asdf1234\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:3000/admin/astro-creation",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"admin",
+												"astro-creation"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "548"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"224-J+XyywpCAN4va4fH+xjtlbfLP+w\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 27 Oct 2021 06:28:37 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"success\": true,\n    \"message\": \"Registration Success\",\n    \"admin\": {\n        \"astroId\": \"6479d7ae-8c3a-4f66-9578-ad02824b798c\",\n        \"firstName\": \"Priya\",\n        \"lastName\": \"Ghosh\",\n        \"email\": \"fipamoj396@d3bb.com\",\n        \"contactNumber\": \"8777068650\",\n        \"gender\": \"Female\",\n        \"active\": false,\n        \"password\": \"$2a$10$ufosoY2Z0k.cz4P.O4htaOvWCYDr4DVDGkBNdjGjKL0gVZxNILtb6\",\n        \"resetPasswordToken\": null,\n        \"resetPasswordExpires\": null,\n        \"emailToken\": null,\n        \"emailTokenExpires\": null,\n        \"accessToken\": null,\n        \"_id\": \"6178f195c0a6de7240659384\",\n        \"createdAt\": \"2021-10-27T06:28:37.335Z\",\n        \"updatedAt\": \"2021-10-27T06:28:37.335Z\",\n        \"__v\": 0\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Get all astro user",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/admin/get-all-astro",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"admin",
+										"get-all-astro"
+									]
+								},
+								"description": "This API endpoint is for get all astro user"
+							},
+							"response": [
+								{
+									"name": "Get all astro user",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:3000/admin/get-all-astro",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"admin",
+												"get-all-astro"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "715"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"2cb-RzGIJa2mRPL6aUx2sLWLz04jPko\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 27 Oct 2021 09:10:07 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"_id\": \"6178f6ce1f1afa79a8e7c3ec\",\n        \"astroId\": \"ddff7a9c-923f-4632-a3a3-81617849a000\",\n        \"firstName\": \"Arbaaz\",\n        \"lastName\": \"Khaan\",\n        \"email\": \"fipamoj396@d3bb.com\",\n        \"contactNumber\": \"8777068650\",\n        \"gender\": \"Male\",\n        \"active\": true,\n        \"password\": \"$2a$10$YSUiYP6npjjmRKcd7qgmreA0UVb0Pdv.2KSkGUBGFcEhOtNYkk7fO\",\n        \"resetPasswordToken\": null,\n        \"resetPasswordExpires\": null,\n        \"emailToken\": null,\n        \"emailTokenExpires\": null,\n        \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZpcGFtb2ozOTZAZDNiYi5jb20iLCJpZCI6ImRkZmY3YTljLTkyM2YtNDYzMi1hM2EzLTgxNjE3ODQ5YTAwMCIsImlhdCI6MTYzNTMxNzg5OCwiZXhwIjoxNjM1MzIxNDk4fQ.cREGzmOz7_XSU7c7ufjtoLs8eyESNYZnrogvaGvKYZI\",\n        \"createdAt\": \"2021-10-27T06:50:54.257Z\",\n        \"updatedAt\": \"2021-10-27T09:04:03.717Z\",\n        \"__v\": 0\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "Get Specific astro user",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/admin/get-astro/6178f6ce1f1afa79a8e7c3ec",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"admin",
+										"get-astro",
+										"6178f6ce1f1afa79a8e7c3ec"
+									]
+								},
+								"description": "This API endpoint is for get specific user by id."
+							},
+							"response": [
+								{
+									"name": "Get Specific astro user",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:3000/admin/get-astro/6178f6ce1f1afa79a8e7c3ec",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"admin",
+												"get-astro",
+												"6178f6ce1f1afa79a8e7c3ec"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "713"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"2c9-qPTHtXd/qFJjLmDyFy7DDrT8i8k\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 27 Oct 2021 09:10:23 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"_id\": \"6178f6ce1f1afa79a8e7c3ec\",\n    \"astroId\": \"ddff7a9c-923f-4632-a3a3-81617849a000\",\n    \"firstName\": \"Arbaaz\",\n    \"lastName\": \"Khaan\",\n    \"email\": \"fipamoj396@d3bb.com\",\n    \"contactNumber\": \"8777068650\",\n    \"gender\": \"Male\",\n    \"active\": true,\n    \"password\": \"$2a$10$YSUiYP6npjjmRKcd7qgmreA0UVb0Pdv.2KSkGUBGFcEhOtNYkk7fO\",\n    \"resetPasswordToken\": null,\n    \"resetPasswordExpires\": null,\n    \"emailToken\": null,\n    \"emailTokenExpires\": null,\n    \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZpcGFtb2ozOTZAZDNiYi5jb20iLCJpZCI6ImRkZmY3YTljLTkyM2YtNDYzMi1hM2EzLTgxNjE3ODQ5YTAwMCIsImlhdCI6MTYzNTMxNzg5OCwiZXhwIjoxNjM1MzIxNDk4fQ.cREGzmOz7_XSU7c7ufjtoLs8eyESNYZnrogvaGvKYZI\",\n    \"createdAt\": \"2021-10-27T06:50:54.257Z\",\n    \"updatedAt\": \"2021-10-27T09:04:03.717Z\",\n    \"__v\": 0\n}"
+								}
+							]
+						},
+						{
+							"name": "Update Astro",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"firstName\": \"Arbaaz\",\r\n    \"lastName\": \"Khaan\",\r\n    \"email\": \"fipamoj396@d3bb.com\",\r\n    \"contactNumber\": \"8777068650\",\r\n    \"gender\": \"Male\",\r\n    \"active\": true,\r\n    \"password\": \"asdf1234\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/admin/update-astro/6178f6ce1f1afa79a8e7c3ec",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"admin",
+										"update-astro",
+										"6178f6ce1f1afa79a8e7c3ec"
+									]
+								},
+								"description": "This API endpoint is for updating astro profile."
+							},
+							"response": [
+								{
+									"name": "Update Astro",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"firstName\": \"Arbaaz\",\r\n    \"lastName\": \"Khaan\",\r\n    \"email\": \"fipamoj396@d3bb.com\",\r\n    \"contactNumber\": \"8777068650\",\r\n    \"gender\": \"Male\",\r\n    \"active\": true,\r\n    \"password\": \"asdf1234\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:3000/admin/update-astro/6178f6ce1f1afa79a8e7c3ec",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"admin",
+												"update-astro",
+												"6178f6ce1f1afa79a8e7c3ec"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "758"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"2f6-ffgkz2hcsnuXWj4jvPZoB/dh/2g\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 27 Oct 2021 09:04:03 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"astro profile updated!\",\n    \"astro\": {\n        \"_id\": \"6178f6ce1f1afa79a8e7c3ec\",\n        \"astroId\": \"ddff7a9c-923f-4632-a3a3-81617849a000\",\n        \"firstName\": \"Arbaaz\",\n        \"lastName\": \"Khaan\",\n        \"email\": \"fipamoj396@d3bb.com\",\n        \"contactNumber\": \"8777068650\",\n        \"gender\": \"Male\",\n        \"active\": true,\n        \"password\": \"$2a$10$YSUiYP6npjjmRKcd7qgmreA0UVb0Pdv.2KSkGUBGFcEhOtNYkk7fO\",\n        \"resetPasswordToken\": null,\n        \"resetPasswordExpires\": null,\n        \"emailToken\": null,\n        \"emailTokenExpires\": null,\n        \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZpcGFtb2ozOTZAZDNiYi5jb20iLCJpZCI6ImRkZmY3YTljLTkyM2YtNDYzMi1hM2EzLTgxNjE3ODQ5YTAwMCIsImlhdCI6MTYzNTMxNzg5OCwiZXhwIjoxNjM1MzIxNDk4fQ.cREGzmOz7_XSU7c7ufjtoLs8eyESNYZnrogvaGvKYZI\",\n        \"createdAt\": \"2021-10-27T06:50:54.257Z\",\n        \"updatedAt\": \"2021-10-27T09:04:03.717Z\",\n        \"__v\": 0\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Delete Astro",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/admin/delete-astro/6178f195c0a6de7240659384",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"admin",
+										"delete-astro",
+										"6178f195c0a6de7240659384"
+									]
+								},
+								"description": "This API end point is for admin user to delete astro"
+							},
+							"response": [
+								{
+									"name": "Delete Astro",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:3000/admin/delete-astro/6178f195c0a6de7240659384",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"admin",
+												"delete-astro",
+												"6178f195c0a6de7240659384"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "85"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"55-JNMKd3hGIpYxRakYYEn70V856OY\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 27 Oct 2021 06:35:52 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"error\": false,\n    \"message\": \"Astro Deleted Successfully!\",\n    \"Response\": {\n        \"deletedCount\": 1\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"email\": \"mr.khan4231@gmail.com\",\r\n\t\"password\": \"asdf1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/admin/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"register"
+							]
+						},
+						"description": "API request endpoint to register admin user."
+					},
+					"response": [
+						{
+							"name": "Register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"email\": \"priya@gmail.com\",\r\n\t\"password\": \"asdf1234\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/admin/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"admin",
+										"register"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "346"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"15a-/lD5+4SAbe9eb4KEMVa4rA2GSGU\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Oct 2021 06:02:26 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Registration Success\",\n    \"admin\": {\n        \"adminId\": \"833cf7da-bceb-45ee-b497-852af3e4b96f\",\n        \"email\": \"priya@gmail.com\",\n        \"password\": \"$2a$10$K.qa2eYU9sfB.KlnhA6cBeQ/SOWgdcowyuK.Umf6wKsEhS4snie/q\",\n        \"accessToken\": null,\n        \"_id\": \"617253f284baf14d3fb44481\",\n        \"createdAt\": \"2021-10-22T06:02:26.234Z\",\n        \"updatedAt\": \"2021-10-22T06:02:26.234Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"email\": \"mr.khan4231@gmail.com\",\r\n\t\"password\": \"asdf1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/admin/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"login"
+							]
+						},
+						"description": "API request to login the registered admin user."
+					},
+					"response": [
+						{
+							"name": "Login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"email\": \"mr.khan4231@gmail.com\",\r\n\t\"password\": \"asdf1234\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/admin/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"admin",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "303"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"12f-RncaCqQdmusXFN9Ac1oBfdzUHq8\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Oct 2021 06:00:40 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Admin logged in successfully\",\n    \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1yLmtoYW40MjMxQGdtYWlsLmNvbSIsImlkIjoiZGMyYjVmMjYtNGQ1MC00NWZiLTk0YTctNmY3NmExNWQwMDVlIiwiaWF0IjoxNjM0ODgyNDQwLCJleHAiOjE2MzQ4ODYwNDB9.yX9-cdS4BIu1rEVV1QiCX_yn7IQGuEdC0lqLYOg7p6o\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Admin",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/admin/delete-admin/6177f5819b1d1cbaaa09eb49",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"delete-admin",
+								"6177f5819b1d1cbaaa09eb49"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Forgot",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"mr.khan4231@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/admin/forgot",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"forgot"
+							]
+						},
+						"description": "This API endpoint is for admin forgot password."
+					},
+					"response": [
+						{
+							"name": "Forgot",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"mr.khan4231@gmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/admin/forgot",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"admin",
+										"forgot"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "119"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"77-iEZteIPVvGTlypGflZQ4JQ41vLg\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 28 Oct 2021 07:26:04 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"If that email address is in our database, we will send you an email to reset your password\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Reset",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/admin/reset",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"reset"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/admin/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"email\": \"zuyderukku@vusra.com\",\r\n\t\"password\": \"asdf1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"register"
+							]
+						},
+						"description": "To register the user"
+					},
+					"response": [
+						{
+							"name": "Register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"email\": \"memlapupse@vusra.com\",\r\n\t\"password\": \"asdf1234\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/user/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"user",
+										"register"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "49"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"31-NYmLHX0DToMjXXHjdctgAvKQbEA\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Oct 2021 18:27:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Registration Success\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"email\": \"nepsurikni@vusra.com\",\r\n\t\"password\": \"asdf1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"login"
+							]
+						},
+						"description": "API endpoint for user login."
+					},
+					"response": [
+						{
+							"name": "Login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"email\": \"memlapupse@vusra.com\",\r\n\t\"password\": \"asdf1234\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/user/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"user",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "301"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"12d-wXekgF31HxSegsy6obYD7ZEr+fA\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Oct 2021 18:34:40 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"User logged in successfully\",\n    \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1lbWxhcHVwc2VAdnVzcmEuY29tIiwiaWQiOiJmZmIzMjM3Mi04NTdlLTQ4NWMtYTU0OS04YTUxNjNlMjJiYTciLCJpYXQiOjE2MzQ5Mjc2NzksImV4cCI6MTYzNDkzMTI3OX0.YzLO4cX6z-KVBsbGYhv-38LnKfunB7wruyR3N_0g0gc\"\n}"
+						}
+					]
+				},
+				{
+					"name": "verify user",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"email\": \"nepsurikni@vusra.com\",\r\n\t\"code\": \"537819\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/activate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"activate"
+							]
+						},
+						"description": "user email verification API endpoint to activate the user so that the user can after login"
+					},
+					"response": [
+						{
+							"name": "verify user",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"email\": \"memlapupse@vusra.com\",\r\n\t\"code\": \"315967\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/user/activate",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"user",
+										"activate"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "47"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2f-RLBHvbh5g8zE3aEkhsm2Tt3xzeU\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Oct 2021 18:31:48 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Account activated.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "update user",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"firstName\": \"Arbaaz\",\r\n\t\"lastName\": \"Khan\",\r\n\t\"contactNumber\": \"8928541639\",\r\n\t\"address\": \"Uttan, Bhayandar, Mumbai\",\r\n\t\"gender\": \"Male\",\r\n\t\"DateOfBirth\": \"04-10-1999\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/update-profile/6177aa399506bb0cfd247fcc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"update-profile",
+								"6177aa399506bb0cfd247fcc"
+							]
+						},
+						"description": "API endpoint to update the user profile by user object id in params."
+					},
+					"response": [
+						{
+							"name": "update user",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"firstName\": \"Arbaaz\",\r\n\t\"lastName\": \"Khan\",\r\n\t\"contactNumber\": \"8928541639\",\r\n\t\"address\": \"Uttan, Bhayandar, Mumbai\",\r\n\t\"gender\": \"Male\",\r\n\t\"DateOfBirth\": \"04-10-1999\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/user/update-profile/6177aa399506bb0cfd247fcc",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"user",
+										"update-profile",
+										"6177aa399506bb0cfd247fcc"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "832"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"340-y53WfRb9zhPcK+MBSuf4Ztbg0MU\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Oct 2021 11:51:19 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"user profile updated!\",\n    \"user\": {\n        \"_id\": \"6177aa399506bb0cfd247fcc\",\n        \"userId\": \"ab7ada78-6ef8-4b1c-8ecf-fbfe4313701c\",\n        \"email\": \"ramlekagne@vusra.com\",\n        \"active\": true,\n        \"password\": \"$2a$10$9fXYokQC5CU3z8iAn4uNIOUde6uHbqdjtjhv1XleMiJUPWQxc5GyO\",\n        \"resetPasswordToken\": null,\n        \"resetPasswordExpires\": null,\n        \"emailToken\": \"\",\n        \"emailTokenExpires\": null,\n        \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJhbWxla2FnbmVAdnVzcmEuY29tIiwiaWQiOiJhYjdhZGE3OC02ZWY4LTRiMWMtOGVjZi1mYmZlNDMxMzcwMWMiLCJpYXQiOjE2MzUyMzIzODUsImV4cCI6MTYzNTIzNTk4NX0.XUBejlIIdF7hw1hAFbKo1gyCQc-GCTGNqrB-mYakAOY\",\n        \"createdAt\": \"2021-10-26T07:11:53.296Z\",\n        \"updatedAt\": \"2021-10-26T11:51:19.398Z\",\n        \"__v\": 0,\n        \"firstName\": \"Arbaaz\",\n        \"lastName\": \"Khan\",\n        \"contactNumber\": \"8928541639\",\n        \"address\": \"Uttan, Bhayandar, Mumbai\",\n        \"gender\": \"Male\",\n        \"DateOfBirth\": \"1999-04-09T18:30:00.000Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get All Users",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/get-all-users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"get-all-users"
+							]
+						},
+						"description": "API endpoint to get all users details present in the databse."
+					},
+					"response": [
+						{
+							"name": "Get All Users",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/user/get-all-users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"user",
+										"get-all-users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1257"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4e9-0UNmvX/1OtzJH2jVlzT3Rnyqxn4\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Oct 2021 07:20:50 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"6177aa399506bb0cfd247fcc\",\n        \"userId\": \"ab7ada78-6ef8-4b1c-8ecf-fbfe4313701c\",\n        \"email\": \"ramlekagne@vusra.com\",\n        \"active\": true,\n        \"password\": \"$2a$10$9fXYokQC5CU3z8iAn4uNIOUde6uHbqdjtjhv1XleMiJUPWQxc5GyO\",\n        \"resetPasswordToken\": null,\n        \"resetPasswordExpires\": null,\n        \"emailToken\": \"\",\n        \"emailTokenExpires\": null,\n        \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJhbWxla2FnbmVAdnVzcmEuY29tIiwiaWQiOiJhYjdhZGE3OC02ZWY4LTRiMWMtOGVjZi1mYmZlNDMxMzcwMWMiLCJpYXQiOjE2MzUyMzIzODUsImV4cCI6MTYzNTIzNTk4NX0.XUBejlIIdF7hw1hAFbKo1gyCQc-GCTGNqrB-mYakAOY\",\n        \"createdAt\": \"2021-10-26T07:11:53.296Z\",\n        \"updatedAt\": \"2021-10-26T07:13:05.411Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6177aaa79506bb0cfd247fd4\",\n        \"userId\": \"6e3f1d28-1e11-4eaa-87a9-d1a8a9d4cadf\",\n        \"email\": \"nepsurikni@vusra.com\",\n        \"active\": true,\n        \"password\": \"$2a$10$Ap2LCjcx5.szLxNPD1nc/.JZqkpauOBhy6ITS5WIXRsYGrqode9Nq\",\n        \"resetPasswordToken\": null,\n        \"resetPasswordExpires\": null,\n        \"emailToken\": \"\",\n        \"emailTokenExpires\": null,\n        \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5lcHN1cmlrbmlAdnVzcmEuY29tIiwiaWQiOiI2ZTNmMWQyOC0xZTExLTRlYWEtODdhOS1kMWE4YTlkNGNhZGYiLCJpYXQiOjE2MzUyMzI0NjMsImV4cCI6MTYzNTIzNjA2M30.4DO3vGBXzfjYYMNvLL11T5xqUfiZPcfTN-1pL-Idkl0\",\n        \"createdAt\": \"2021-10-26T07:13:43.338Z\",\n        \"updatedAt\": \"2021-10-26T07:14:23.575Z\",\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "get Specific User",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/get-user/6177aa399506bb0cfd247fcc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"get-user",
+								"6177aa399506bb0cfd247fcc"
+							]
+						},
+						"description": "API endpoint to get specific user details by user object id in paramas."
+					},
+					"response": [
+						{
+							"name": "get Specific User",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/user/get-user/6177aa399506bb0cfd247fcc",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"user",
+										"get-user",
+										"6177aa399506bb0cfd247fcc"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "627"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"273-kgEZIKxH1BNVV6tAoBoF7JC+MSo\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Oct 2021 11:45:53 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"6177aa399506bb0cfd247fcc\",\n    \"userId\": \"ab7ada78-6ef8-4b1c-8ecf-fbfe4313701c\",\n    \"email\": \"ramlekagne@vusra.com\",\n    \"active\": true,\n    \"password\": \"$2a$10$9fXYokQC5CU3z8iAn4uNIOUde6uHbqdjtjhv1XleMiJUPWQxc5GyO\",\n    \"resetPasswordToken\": null,\n    \"resetPasswordExpires\": null,\n    \"emailToken\": \"\",\n    \"emailTokenExpires\": null,\n    \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJhbWxla2FnbmVAdnVzcmEuY29tIiwiaWQiOiJhYjdhZGE3OC02ZWY4LTRiMWMtOGVjZi1mYmZlNDMxMzcwMWMiLCJpYXQiOjE2MzUyMzIzODUsImV4cCI6MTYzNTIzNTk4NX0.XUBejlIIdF7hw1hAFbKo1gyCQc-GCTGNqrB-mYakAOY\",\n    \"createdAt\": \"2021-10-26T07:11:53.296Z\",\n    \"updatedAt\": \"2021-10-26T07:13:05.411Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete user",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/delete-user/6177aa399506bb0cfd247fcc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"delete-user",
+								"6177aa399506bb0cfd247fcc"
+							]
+						},
+						"description": "API endpoint to delete user account by using user object id in params."
+					},
+					"response": [
+						{
+							"name": "Delete user",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/user/delete-user/6177aa399506bb0cfd247fcc",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"user",
+										"delete-user",
+										"6177aa399506bb0cfd247fcc"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "18"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"12-uqqlHE4Wm7LBRtOIBZ9EyD8JjQM\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Oct 2021 11:54:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"deletedCount\": 1\n}"
+						}
+					]
+				},
+				{
+					"name": "Forgot Password",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"nepsurikni@vusra.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/forgot",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"forgot"
+							]
+						},
+						"description": "This API endpoint is for User forgot password."
+					},
+					"response": [
+						{
+							"name": "Forgot Password",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"nepsurikni@vusra.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/user/forgot",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"user",
+										"forgot"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "119"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"77-iEZteIPVvGTlypGflZQ4JQ41vLg\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 28 Oct 2021 06:49:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"If that email address is in our database, we will send you an email to reset your password\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Reset Password",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": ,\r\n    \"new password\": ,\r\n    \"confirm password\": \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/reset",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"reset"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/user/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Astro",
+			"item": [
+				{
+					"name": "Login Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"fipamoj396@d3bb.com\",\r\n    \"password\": \"asdf1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/astro/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"astro",
+								"login"
+							]
+						},
+						"description": "This API endpoint is for astro login."
+					},
+					"response": [
+						{
+							"name": "Login Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"fipamoj396@d3bb.com\",\r\n    \"password\": \"asdf1234\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/astro/astro-login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"astro",
+										"astro-login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "301"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"12d-ivfMJrF6tiDzQVuJJePfVLW8i8c\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 27 Oct 2021 06:58:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Astro logged in successfully\",\n    \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZpcGFtb2ozOTZAZDNiYi5jb20iLCJpZCI6ImRkZmY3YTljLTkyM2YtNDYzMi1hM2EzLTgxNjE3ODQ5YTAwMCIsImlhdCI6MTYzNTMxNzg5OCwiZXhwIjoxNjM1MzIxNDk4fQ.cREGzmOz7_XSU7c7ufjtoLs8eyESNYZnrogvaGvKYZI\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

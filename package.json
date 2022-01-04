@@ -1,0 +1,56 @@
+{
+    "name": "astro_backend",
+    "version": "1.0.0",
+    "description": "This README would normally document whatever steps are necessary to get your application up and running.",
+    "main": "server.js",
+    "scripts": {
+        "start": "node --trace-warnings server.js",
+        "dev": "nodemon",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://_avani_@bitbucket.org/codeaxes1/astro_backend.git"
+    },
+    "keywords": [
+        "Nodejs",
+        "Expressjs",
+        "jwt",
+        "mongodb",
+        "nodemailer",
+        "bcrypt",
+        "API"
+    ],
+    "author": "Arbaaz, Priya",
+    "build_licence": "Codeaxes",
+    "homepage": "https://bitbucket.org/codeaxes1/astro_backend#readme",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "connect-mongo": "^4.6.0",
+        "cookie-session": "^1.4.0",
+        "cors": "^2.8.5",
+        "dotenv": "^10.0.0",
+        "ejs": "^3.1.6",
+        "express": "^4.17.1",
+        "express-validator": "^6.13.0",
+        "joi": "^17.4.2",
+        "jsonwebtoken": "^8.5.1",
+        "jwt-decode": "^3.1.2",
+        "mongo-sanitize": "^1.1.0",
+        "mongodb": "^4.1.4",
+        "mongoose": "^6.0.11",
+        "multer": "^1.4.3",
+        "multer-gridfs-storage": "^5.0.2",
+        "nanoid": "^3.1.30",
+        "nodemailer": "^6.7.0",
+        "nodemailer-sendgrid-transport": "^0.2.0",
+        "passport": "^0.5.0",
+        "passport-facebook": "^3.0.0",
+        "passport-google-oauth20": "^2.0.0",
+        "socket.io": "^4.4.0",
+        "uuid": "^8.3.2"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.14"
+    }
+}
